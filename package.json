@@ -1,0 +1,27 @@
+{
+  "name": "mcp-ado-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server (TypeScript) for Azure DevOps with Entra ID OBO",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node --esm src/server.ts"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^1.17.2",
+    "@modelcontextprotocol/sdk": "^1.1.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
